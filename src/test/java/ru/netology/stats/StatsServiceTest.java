@@ -9,7 +9,7 @@ class StatsServiceTest {
     public void totalSales() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService statsService = new StatsService();
-        long actual = statsService.TotalSales(sales);
+        long actual = statsService.totalSales(sales);
         long expected = 8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18;
         Assertions.assertEquals(expected, actual);
 
@@ -20,7 +20,7 @@ class StatsServiceTest {
     public void averageSales() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService statsService = new StatsService();
-        long actual = statsService.AverageSales(sales);
+        long actual = statsService.averageSales(sales);
         long expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12;
         Assertions.assertEquals(expected, actual);
     }
@@ -29,7 +29,7 @@ class StatsServiceTest {
     public void maxMonth() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService statsService = new StatsService();
-        int actual = statsService.MaxMonth(sales);
+        int actual = statsService.maxMonth(sales);
         int expected = 8;
     }
 
@@ -37,7 +37,7 @@ class StatsServiceTest {
     public void minMonth() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService statsService = new StatsService();
-        int actual = statsService.MinMonth(sales);
+        int actual = statsService.minMonth(sales);
         int expected = 9;
 
     }
@@ -46,7 +46,7 @@ class StatsServiceTest {
     public void monthsBelowAverage() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService statsService = new StatsService();
-        int actual = statsService.MonthsBelowAverage(sales);
+        int actual = statsService.monthsBelowAverage(sales);
         int expected = 5;
     }
 
@@ -54,7 +54,7 @@ class StatsServiceTest {
     public void monthsAboveAverage() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService statsService = new StatsService();
-        int actual = statsService.MonthsAboveAverage(sales);
+        int actual = statsService.monthsAboveAverage(sales);
         int expected = 5;
     }
 }
