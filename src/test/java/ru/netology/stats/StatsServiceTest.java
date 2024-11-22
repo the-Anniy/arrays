@@ -31,6 +31,7 @@ class StatsServiceTest {
         StatsService statsService = new StatsService();
         int actual = statsService.maxMonth(sales);
         int expected = 8;
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -39,6 +40,7 @@ class StatsServiceTest {
         StatsService statsService = new StatsService();
         int actual = statsService.minMonth(sales);
         int expected = 9;
+        Assertions.assertEquals(expected, actual);
 
     }
 
@@ -48,6 +50,7 @@ class StatsServiceTest {
         StatsService statsService = new StatsService();
         int actual = statsService.monthsBelowAverage(sales);
         int expected = 5;
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -56,5 +59,6 @@ class StatsServiceTest {
         StatsService statsService = new StatsService();
         int actual = statsService.monthsAboveAverage(sales);
         int expected = 5;
+        Assertions.assertEquals(expected, actual);
     }
 }

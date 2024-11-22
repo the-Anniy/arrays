@@ -17,7 +17,7 @@ public class StatsService {
     public int maxMonth(long[] sales) {
         int maxMonth = 0;
         for (int i = 0; i < sales.length; i++) {
-            if (sales[i] >= maxMonth) {
+            if (sales[i] >= sales[maxMonth]) {
                 maxMonth = i;
             }
         }
